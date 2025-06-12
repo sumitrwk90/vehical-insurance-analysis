@@ -1,0 +1,45 @@
+
+-> Create workflow.txt file --> write all the flow & minimise the confusion
+
+------------------------------------Environment & project directory set-up--------------------------------
+
+-> Environment set-up --> 
+
+            python -m venv venv
+            venv\Scripts\Activate
+
+            pip install --upgrade pip setuptools wheel
+
+-> Create project template --> python template.py
+-> Local packages set-up --> setup.py and pyproject.toml ( for local package import )
+-> Install packages --> pip install -r requirements.txt
+
+------------------------------------Git setup-------------------------------------------
+
+-> create git repo on GitHub with your project/any name --> new repository
+-> git clone repo_name
+-> Configure:
+            git config --global user.name "username"
+            git config --global user.email "gmail_id"
+-> git status
+-> git add .
+-> git commit -m "commit message"
+-> git push origin main
+
+----------------------------------------------- MongoDB Setup -----------------------------------------------
+-> Sign up to MongoDB Atlas
+-> Create a new project by just providing it a name then create.
+-> From "Create a free cluster" screen, hit "create", Select M0 service keeping other services as default, hit "create deployment"
+-> Setup the username and password and then create DB user.
+-> Go to "network access" and add ip address - "0.0.0.0/0" so that we can access it from anywhere
+-> Go back to project >> "Get Connection String" >> "Drivers" >> {Driver:Python, Version:3.6 or later} 
+   >> copy and save the connection string with you(replace password). >> Done.
+-> Create folder "notebook" >> do step 11 >>  create file "mongoDB_demo.ipynb" >> select kernal>python kernal>vehicle>>
+-> Dataset added to notebook folder
+-> Push your data to mongoDB database from your python notebook.
+-> Go to mongoDB Atlas >> Database >> browse collection >> see your data in key value format
+
+-------------------------------------- logging, exception and notebooks --------------------------------------
+-> Write the logger file and test it on demo.py
+-> Write the exception file and test it on demo.py
+-> EDA and Feature Engg notebook added.
